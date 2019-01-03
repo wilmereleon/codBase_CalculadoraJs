@@ -52,7 +52,7 @@ function inicio(){
     display.textContent = display.textContent + "4";
   }
   cinco.onclick = function(e){
-    respuesta.textContent = display.textContent + "5";
+    display.textContent = display.textContent + "5";
   }
   seis.onclick = function(e){
     display.textContent = display.textContent + "6";
