@@ -26,43 +26,37 @@ function inicio(){
 
 
   encendido.onclick = function(e){
-    if {
-
-    }
-    respuesta.TextContent = resultado.TextContent + "on";
-    else {
-      reset();
-    }
+    display.textContent = resultado.textContent + "on";
   }
   signo.onclick = function(e){
-    display.TextContent = display.TextContent + "sign"
+    display.textContent = display.textContent + "sign"
   }
   raiz.onclick = function(e){
-    display.TextContent = display.TextContent + "raiz";
+    display.textContent = display.textContent + "raiz";
   }
   division.onclick = function(e){
     display.TextContent = display.TextContent + "dividido";
   }
   siete.onclick = function(e){
-    display.TextContent = display.TextContent + "7";
+    display.textContent = display.textContent + "7";
   }
   ocho.onclick = function(e){
-    display.TextContent = display.TextContent + "8";
+    display.textContent = display.textContent + "8";
   }
   nueve.onclick = function(e){
-    display.TextContent = display.TextContent + "9";
+    display.textContent = display.textContent + "9";
   }
   multiplicacion.onclick = function(e){
-    display.TextContent = display.TextContent + "por";
+    display.textContent = display.textContent + "por";
   }
   cuatro.onclick = function(e){
-    display.TextContent = display.TextContent + "4";
+    display.textContent = display.textContent + "4";
   }
   cinco.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "5";
+    respuesta.textContent = display.textContent + "5";
   }
   seis.onclick = function(e){
-    display.TextContent = display.TextContent + "6";
+    display.textContent = display.textContent + "6";
   }
   resta.onclick = function(e){
     display.TextContent = display.TextContent + "menos";
