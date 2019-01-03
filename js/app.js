@@ -40,7 +40,7 @@ function inicio(){
   }
   raiz.onclick = function(e){
     numeroA = display.textContent;
-    respuestaAB = sqrt(numeroA);
+    respuestaAB = "raiz";
     limpieza();
   }
   division.onclick = function(e){
@@ -125,6 +125,9 @@ function respuesta(){
       break;
     case "/":
       rta = parseFloat(numeroA) / parseFloat(numeroB);
+      break;
+    case "raiz":
+      rta = parseFloat(Math.sqrt(numeroA));
       break;
   }
   reseteo();
