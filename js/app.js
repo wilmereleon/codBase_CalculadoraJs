@@ -1,7 +1,7 @@
 function inicio(){
   //alert("Hola, mundo");
 
-  var respuesta = document.getElementById("calculadoraFondo")
+  var display = document.getElementById("display")
 
   var encendido = document.getElementById("on");
   var signo = document.getElementById("sign");
@@ -35,49 +35,49 @@ function inicio(){
     }
   }
   signo.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "sign"
+    display.TextContent = display.TextContent + "sign"
   }
   raiz.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "raiz";
+    display.TextContent = display.TextContent + "raiz";
   }
   division.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "dividido";
+    display.TextContent = display.TextContent + "dividido";
   }
   siete.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "7";
+    display.TextContent = display.TextContent + "7";
   }
   ocho.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "8";
+    display.TextContent = display.TextContent + "8";
   }
   nueve.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "9";
+    display.TextContent = display.TextContent + "9";
   }
   multiplicacion.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "por";
+    display.TextContent = display.TextContent + "por";
   }
   cuatro.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "4";
+    display.TextContent = display.TextContent + "4";
   }
   cinco.onclick = function(e){
     respuesta.TextContent = display.TextContent + "5";
   }
   seis.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "6";
+    display.TextContent = display.TextContent + "6";
   }
   resta.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "menos";
+    display.TextContent = display.TextContent + "menos";
   }
   cero.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "0";
+    display.TextContent = display.TextContent + "0";
   }
   punto.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "punto";
+    display.TextContent = display.TextContent + "punto";
   }
   igual.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "igual";
+    display.TextContent = display.TextContent + "igual";
   }
   suma.onclick = function(e){
-    respuesta.TextContent = display.TextContent + "mas";
+    display.TextContent = display.TextContent + "mas";
   }
 
 }
