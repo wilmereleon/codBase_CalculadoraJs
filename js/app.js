@@ -101,9 +101,35 @@ function inicio(){
     respuestaAB = "+";
     limpieza();
   }
-
 }
-
+function limpieza(){
+  display.textContent = "";
+}
+function reseteo(){
+  display.textContent = "";
+  numeroA = 0;
+  numeroB = 0;
+  respuestaAB = "";
+}
+function respuesta(){
+  var rta = 0;
+  switch(respuestaAB){
+    case "+":
+      rta = parseFloat(numeroA) + parseFloat(numeroB);
+      break;
+    case "-":
+      rta = parseFloat(numeroA) - parseFloat(numeroB);
+      break;
+    case "*":
+      rta = parseFloat(numeroA) * parseFloat(numeroB);
+      break;
+    case "/":
+      rta = parseFloat(numeroA) / parseFloat(numeroB);
+      break;
+  }
+  reseteo();
+  display.textContent = rta;
+}
 
 
 function teclaTextBox(event){
