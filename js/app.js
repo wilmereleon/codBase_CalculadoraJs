@@ -35,49 +35,49 @@ function inicio(){
     }
   }
   signo.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "sign"
+    respuesta.TextContent = display.TextContent + "sign"
   }
   raiz.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "raiz";
+    respuesta.TextContent = display.TextContent + "raiz";
   }
   division.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "dividido";
+    respuesta.TextContent = display.TextContent + "dividido";
   }
   siete.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "7";
+    respuesta.TextContent = display.TextContent + "7";
   }
   ocho.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "8";
+    respuesta.TextContent = display.TextContent + "8";
   }
   nueve.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "9";
+    respuesta.TextContent = display.TextContent + "9";
   }
   multiplicacion.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "por";
+    respuesta.TextContent = display.TextContent + "por";
   }
   cuatro.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "4";
+    respuesta.TextContent = display.TextContent + "4";
   }
   cinco.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "5";
+    respuesta.TextContent = display.TextContent + "5";
   }
   seis.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "6";
+    respuesta.TextContent = display.TextContent + "6";
   }
   resta.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "menos";
+    respuesta.TextContent = display.TextContent + "menos";
   }
   cero.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "0";
+    respuesta.TextContent = display.TextContent + "0";
   }
   punto.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "punto";
+    respuesta.TextContent = display.TextContent + "punto";
   }
   igual.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "igual";
+    respuesta.TextContent = display.TextContent + "igual";
   }
   suma.onclick = function(e){
-    respuesta.TextContent = resultado.TextContent + "mas";
+    respuesta.TextContent = display.TextContent + "mas";
   }
 
 }
