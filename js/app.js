@@ -1,3 +1,7 @@
+var numeroA;
+var numeroB;
+var respuestaAB;
+
 function inicio(){
 
   var display = document.getElementById("display");
@@ -29,16 +33,20 @@ function inicio(){
 
 
   encendido.onclick = function(e){
-    display.textContent = resultado.textContent + "on";
+    reseteo();
   }
   signo.onclick = function(e){
     display.textContent = display.textContent + "sign"
   }
   raiz.onclick = function(e){
-    display.textContent = display.textContent + "raiz";
+    numeroA = display.textContent;
+    respuestaAB = sqrt(numeroA);
+    limpieza();
   }
   division.onclick = function(e){
-    display.textContent = display.textContent + "dividido";
+    numeroA = display.textContent;
+    respuestaAB = "/";
+    limpieza();
   }
   siete.onclick = function(e){
     display.textContent = display.textContent + "7";
@@ -50,7 +58,9 @@ function inicio(){
     display.textContent = display.textContent + "9";
   }
   multiplicacion.onclick = function(e){
-    display.textContent = display.textContent + "por";
+    numeroA = display.textContent;
+    respuestaAB = "*";
+    limpieza();
   }
   cuatro.onclick = function(e){
     display.textContent = display.textContent + "4";
@@ -72,7 +82,9 @@ function inicio(){
   }
 
   resta.onclick = function(e){
-    display.textContent = display.textContent + "menos";
+    numeroA = display.textContent;
+    respuestaAB = "-";
+    limpieza();
   }
   cero.onclick = function(e){
     display.textContent = display.textContent + "0";
@@ -81,10 +93,13 @@ function inicio(){
     display.textContent = display.textContent + "punto";
   }
   igual.onclick = function(e){
-    display.textContent = display.textContent + "igual";
+    numeroB = display.textContent;
+    respuesta();
   }
   suma.onclick = function(e){
-    display.textContent = display.textContent + "mas";
+    numeroA = display.textContent;
+    respuestaAB = "+";
+    limpieza();
   }
 
 }
