@@ -17,6 +17,10 @@ function inicio(){
   var seis = document.getElementById("6");
   var resta = document.getElementById("menos");
 
+  var uno = document.getElementById("1");
+  var dos = document.getElementById("2");
+  var tres = document.getElementById("3");
+
   var cero = document.getElementById("0");
   var punto = document.getElementById("punto");
   var igual = document.getElementById("igual");
@@ -57,6 +61,16 @@ function inicio(){
   seis.onclick = function(e){
     display.textContent = display.textContent + "6";
   }
+  uno.onclick = function(e){
+    display.textContent = display.textContent + "1";
+  }
+  dos.onclick = function(e){
+    display.textContent = display.textContent + "2";
+  }
+  tres.onclick = function(e){
+    display.textContent = display.textContent + "3";
+  }
+
   resta.onclick = function(e){
     display.textContent = display.textContent + "menos";
   }
