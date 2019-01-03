@@ -1,7 +1,6 @@
 function inicio(){
-  //alert("Hola, mundo");
 
-  var display = document.getElementById("display")
+  var display = document.getElementById("display");
 
   var encendido = document.getElementById("on");
   var signo = document.getElementById("sign");
@@ -22,7 +21,7 @@ function inicio(){
   var punto = document.getElementById("punto");
   var igual = document.getElementById("igual");
 
-  var suma = document.getElementById("mas");}
+  var suma = document.getElementById("mas");
 
 
   encendido.onclick = function(e){
@@ -35,7 +34,7 @@ function inicio(){
     display.textContent = display.textContent + "raiz";
   }
   division.onclick = function(e){
-    display.TextContent = display.TextContent + "dividido";
+    display.textContent = display.textContent + "dividido";
   }
   siete.onclick = function(e){
     display.textContent = display.textContent + "7";
@@ -59,19 +58,19 @@ function inicio(){
     display.textContent = display.textContent + "6";
   }
   resta.onclick = function(e){
-    display.TextContent = display.TextContent + "menos";
+    display.textContent = display.textContent + "menos";
   }
   cero.onclick = function(e){
-    display.TextContent = display.TextContent + "0";
+    display.textContent = display.textContent + "0";
   }
   punto.onclick = function(e){
-    display.TextContent = display.TextContent + "punto";
+    display.textContent = display.textContent + "punto";
   }
   igual.onclick = function(e){
-    display.TextContent = display.TextContent + "igual";
+    display.textContent = display.textContent + "igual";
   }
   suma.onclick = function(e){
-    display.TextContent = display.TextContent + "mas";
+    display.textContent = display.textContent + "mas";
   }
 
 }
