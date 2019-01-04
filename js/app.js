@@ -150,21 +150,11 @@ function calculadora(){
   punto.onclick = function(e){
     display.textContent = display.textContent + ".";
 }
-//  igual.onclick = function(e){
-//    numeroB = display.textContent;
-//    respuesta();
-//  }
-
-  igual.onclick = function(e){
-    if(display.textContent.length > 8){
-      respuestaAB = "Error";
-      numeroA = "Error";
-      numeroB = "Error";
-        }else{
-        numeroB = display.textContent;
-        respuesta();
-        }
+  raiz.onclick = numeroB = display.textContent;
+    respuesta();
   }
+
+
   suma.onclick = function(e){
     numeroA = display.textContent;
     respuestaAB = "+";
