@@ -2,7 +2,7 @@ var numeroA;
 var numeroB;
 var respuestaAB;
 
-function inicio(){
+function calculadora(){
 
   var display = document.getElementById("display");
 
@@ -41,7 +41,6 @@ function inicio(){
   raiz.onclick = function(e){
     numeroA = display.textContent;
     respuestaAB = "raiz";
-    limpieza();
   }
   division.onclick = function(e){
     numeroA = display.textContent;
@@ -101,14 +100,20 @@ function inicio(){
     respuestaAB = "+";
     limpieza();
   }
+  signo.onclick = function(e){
+    numeroA = display.textContent;
+    respuestaAB = "sign";
+    respuesta2();
+  }
 }
 function limpieza(){
-  display.textContent = "";
+    display.textContent = "";
+
 }
 function reseteo(){
-  display.textContent = "";
-  numeroA = 0;
-  numeroB = 0;
+  display.textContent = 0;
+  numeroA = "";
+  numeroB = "";
   respuestaAB = "";
 }
 function respuesta(){
@@ -135,7 +140,24 @@ function respuesta(){
 }
 
 
+function respuesta2(){
+  var rta = 0;
+  switch(respuestaAB){
+    case "sign":
+      rta = parseFloat(-numeroA);
+      break;
+  }
+  reseteo();
+  display.textContent = rta;
+}
+
+
+
+
+
+/***
 function teclaTextBox(event){
   var tecla = event.which || event.keyCode;
   document.querySelector("#calculadoraFondo .display span").innerHTML="Presionaste: "+String.fromCharCode(tecla)
 }
+*****/
