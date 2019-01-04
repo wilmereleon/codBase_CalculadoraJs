@@ -48,13 +48,31 @@ function calculadora(){
     limpieza();
   }
   siete.onclick = function(e){
-    display.textContent = display.textContent + "7";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "7"
+       }
   }
   ocho.onclick = function(e){
-    display.textContent = display.textContent + "8";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "8"
+       }
   }
   nueve.onclick = function(e){
-    display.textContent = display.textContent + "9";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "9"
+       }
   }
   multiplicacion.onclick = function(e){
     numeroA = display.textContent;
@@ -62,22 +80,58 @@ function calculadora(){
     limpieza();
   }
   cuatro.onclick = function(e){
-    display.textContent = display.textContent + "4";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "4"
+       }
   }
   cinco.onclick = function(e){
-    display.textContent = display.textContent + "5";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "5"
+       }
   }
   seis.onclick = function(e){
-    display.textContent = display.textContent + "6";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "6"
+       }
   }
   uno.onclick = function(e){
-    display.textContent = display.textContent + "1";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "1"
+       }
   }
   dos.onclick = function(e){
-    display.textContent = display.textContent + "2";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "2"
+       }
   }
   tres.onclick = function(e){
-    display.textContent = display.textContent + "3";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "3"
+       }
   }
 
   resta.onclick = function(e){
@@ -86,7 +140,13 @@ function calculadora(){
     limpieza();
   }
   cero.onclick = function(e){
-    display.textContent = display.textContent + "0";
+    if(display.textContent == "0"){
+         display.textContent= "";
+       }
+       if(display.textContent.length >= 8){
+       }else{
+       display.textContent += "0"
+       }
   }
   punto.onclick = function(e){
     display.textContent = display.textContent + "punto";
@@ -138,8 +198,6 @@ function respuesta(){
   reseteo();
   display.textContent = rta;
 }
-
-
 function respuesta2(){
   var rta = 0;
   switch(respuestaAB){
@@ -150,14 +208,3 @@ function respuesta2(){
   reseteo();
   display.textContent = rta;
 }
-
-
-
-
-
-/***
-function teclaTextBox(event){
-  var tecla = event.which || event.keyCode;
-  document.querySelector("#calculadoraFondo .display span").innerHTML="Presionaste: "+String.fromCharCode(tecla)
-}
-*****/
