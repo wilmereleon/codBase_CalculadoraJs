@@ -133,7 +133,6 @@ function calculadora(){
        display.textContent += "3"
        }
   }
-
   resta.onclick = function(e){
     numeroA = display.textContent;
     respuestaAB = "-";
@@ -149,22 +148,29 @@ function calculadora(){
        }
   }
   punto.onclick = function(e){
-    display.textContent = display.textContent + "punto";
-  }
+    display.textContent = display.textContent + ".";
+}
+//  igual.onclick = function(e){
+//    numeroB = display.textContent;
+//    respuesta();
+//  }
+
   igual.onclick = function(e){
-    numeroB = display.textContent;
-    respuesta();
+    if(display.textContent.length > 8){
+      respuestaAB = "Error";
+      numeroA = "Error";
+      numeroB = "Error";
+        }else{
+        numeroB = display.textContent;
+        respuesta();
+        }
   }
   suma.onclick = function(e){
     numeroA = display.textContent;
     respuestaAB = "+";
     limpieza();
   }
-  signo.onclick = function(e){
-    numeroA = display.textContent;
-    respuestaAB = "sign";
-    respuesta2();
-  }
+
 }
 function limpieza(){
     display.textContent = "";
